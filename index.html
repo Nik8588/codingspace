@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
+    <title>coding space </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coding Space</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/codingspace/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/codingspace/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            our Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="htmlc.html">html</a></li>
+                            <li><a class="dropdown-item" href="cssc.html">css</a></li>
+                            <li>
+                            <li><a class="dropdown-item" href="jsc.html">js</a></li>
+
+                            <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">write your review</a></li>
+                </ul>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>To see our Courses:-</strong>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+            up</button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log in </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--sign up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create new account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create my account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container md-flex">
+        <h1 class="pb-4 mb-4 fst-italic border-bottom my-2 ">Become A Programmer
+        </h1>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="https://miro.medium.com/max/1400/1*4hoB4BlGCGTPIWga6h8iMA.jpeg" height="500px"
+                        class="d-block img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-danger">HTML</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://exob2b.com/wp-content/uploads/2014/05/web-development.jpg" height="500px"
+                        class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-danger">CSS</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nJTIwc2V0dXB8ZW58MHx8MHx8&w=1000 &q=80"
+                        height="500px" class="d-block  img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-danger">JavaScript</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <hr>
+        <div class="row g-5">
+            <div class="col-md-8">
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Web Developer
+                    </h2>
+                    <img class="img-fluid"
+                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/72AYgWguyRFfesCrDJi8w8/35b0d50e819d179b4d99b5f8e44fb416/GettyImages-1255905368.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h="
+                        width="700px" height="400px" alt="">
+                    <p class="blog-post-meta">January 1, 2022 by <a href="#">code space</a></p>
+
+                    <p>A web developer is a programmer who develops World Wide Web applications using a client–server
+                         model.The applications typically use HTML, CSS and JavaScript in the client, PHP, ASP.NET (C#),
+                        Python,Node.js, Go or Java in the server, and http for communications between client and server.
+                        A
+                        web developer may specialize in client-side applications (front-end developer), server-side
+                        applicationsback-end developer), or both (full-stack developer).
+                    </p>
+                    <hr>
+
+                    <h2> Full-Stack Developer</h2>
+                    <p>Full-stack technology refers to the entire depth of a computer system application, and full stack
+                        web
+                        developers are those who are capable of developing both the front end and the back end of web
+                        development. All of the features that are visible to the client, or the viewer of the site, are
+                        included in the front end.</p>
+
+                    <h3> Front-End Developer</h3>
+                    <p> Front-end web development, also known as client-side development is the practice of producing
+                        HTML,
+                        CSS and JavaScript for a website or Web Application so that a user can see and interact with
+                        them
+                        directly. The challenge associated with front end development is that the tools and techniques
+                        used
+                        to create the front end of a website change constantly and so the developer needs to constantly
+                        be
+                        aware of how the field is developing.</p>
+
+                    <h3> Important Languagees for Front-End Developer</h3>
+                    <dl>
+                        <dt>HyperText Markup Language (HTML)</dt>
+                        <dd>The language used to describe and define the content of a Web page</dd>
+                        <dt>Cascading Style Sheets (CSS)</dt>
+                        <dd>Used to describe the appearance of Web content</dd>
+                        <dt>JavaScript (JS)</dt>
+                        <dd>The programming language used to build advanced Web sites and applications</dd>
+                    </dl>
+                    <h2> HTML</h2><br>
+                    <p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained
+                        within an HTML file is structured. This markup tells a web browser how to display text, images
+                        and other forms of multimedia on a webpage.HTML is a formal recommendation by the World Wide Web
+                        Consortium (W3C) and is generally adhered to by all major web browsers, including both desktop
+                        and mobile web browsers. HTML5 is the latest version of the specification. </p><br>
+
+                    <h2>CSS</h2><br>
+                    <p>CSS stands for Cascading Style Sheets language and is used to stylize elements written in a
+                        markup language such as HTML. It separates the content from the visual representation of the
+                        site. The relation between HTML and CSS is strongly tied together since HTML is the very
+                        foundation of a site and CSS is all of the aesthetics of an entire website.CSS was developed by
+                        W3C (World Wide Web Consortium) in 1996 for a rather simple reason. HTML element was not
+                        designed to have tags that would help format the page. You were only supposed to write the
+                        markup for the web page.
+                    </p><br>
+                    <h2>JavaScript</h2> <br>
+                    <p>JavaScript is a dynamic programming language that's used for web development, in web
+                        applications, for game development, and lots more. It allows you to implement dynamic features
+                        on web pages that cannot be done with only HTML and CSS.Many browsers use JavaScript as a
+                        scripting language for doing dynamic things on the web. Any time you see a click-to-show
+                        dropdown menu, extra content added to a page, and dynamically changing element colors on a page,
+                        to name a few features, you're seeing the effects of JavaScript.
+                    </p>
+
+                </article>
+
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-secondary rounded ">
+                    <h4 class="fst-italic">Summary</h4>
+                    <p class="mb-0">This blog is maintain by Nikhil lal,here you read about developer.
+                        what computer languages you should know to become front end developer
+                    </p>
+                </div>
+
+
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-secondary">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-dark">© 2022 Coding Space, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
